@@ -1,6 +1,6 @@
 {
   "name": "lidashuang-lerna-test2",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
   "author": "daveleeli <daveleeli@tencent.com>",
@@ -27,5 +27,5 @@
     "url": "https://github.com/focusLee/lerna-test/issues"
   },
   "homepage": "https://github.com/focusLee/lerna-test#readme",
-  "gitHead": "6c31a5eed245af88a19b186d84961e4fb253f40f"
+  "gitHead": "605218bcd36ba5faed2288f998a36ebbb41f1664"
 }
