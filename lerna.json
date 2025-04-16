@@ -13,9 +13,7 @@
       "includeMergedTags": true
     },
     "publish": {
-      "registry": "https://registry.npmjs.org/",
-      "verifyAccess": false,
-      "verifyRegistry": false
+      "registry": "https://registry.npmjs.org/"
     }
   }
 }
