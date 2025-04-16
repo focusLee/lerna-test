@@ -9,7 +9,7 @@
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
-    "lerna": "^8.2.2",
+    "lerna": "^4.0.0",
     "vuepress": "^1.9.10"
   }
 }
