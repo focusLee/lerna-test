@@ -24,6 +24,7 @@ jobs:
 
       - name: publish to npm
         run: |
+          npm whoami
           ./node_modules/.bin/lerna run prepack
           ./node_modules/.bin/lerna publish from-package --no-verify-access --ignore-scripts --create-release github -y
         env:
