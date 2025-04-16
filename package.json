@@ -4,7 +4,14 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
   "dependencies": {
     "lerna": "^4.0.0"
+  },
+  "devDependencies": {
+    "vuepress": "^1.9.10"
   }
 }
