@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.8](https://github.com/focusLee/lerna-test/compare/v0.0.7...v0.0.8) (2025-04-16)
+
+
+### Features
+
+* init ([896415d](https://github.com/focusLee/lerna-test/commit/896415db0829544f52557e83c23cacb14a4597d8))
+
+
+
+
+
 ## [0.0.7](https://github.com/focusLee/lerna-test/compare/v0.0.6...v0.0.7) (2025-04-16)
 
 **Note:** Version bump only for package lerna-test
