@@ -26,5 +26,6 @@
   "bugs": {
     "url": "https://github.com/focusLee/lerna-test/issues"
   },
-  "homepage": "https://github.com/focusLee/lerna-test#readme"
+  "homepage": "https://github.com/focusLee/lerna-test#readme",
+  "gitHead": "c68ec1e5af29da872c3162efa1c51d3eac382b74"
 }

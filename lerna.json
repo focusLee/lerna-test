@@ -4,5 +4,16 @@
   "npmClient": "yarn",
   "packages": [
     "packages/*"
-  ]
+  ],
+  "command": {
+    "version": {
+      "exact": true,
+      "message": "chore(release): publish",
+      "conventionalCommits": true,
+      "includeMergedTags": true
+    },
+    "publish": {
+      "registry": "https://registry.npmjs.org/"
+    }
+  }
 }
