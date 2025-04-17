@@ -33,5 +33,5 @@ jobs:
           ./node_modules/.bin/lerna publish patch --yes --force-publish --no-verify-access
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          github_token: ${{ secrets.PAT_TOKEN }}
+          github_token: ${{ secrets.NPM_TOKEN }}
 
