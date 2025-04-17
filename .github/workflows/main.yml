@@ -29,3 +29,4 @@ jobs:
           ./node_modules/.bin/lerna publish from-package --no-verify-access --ignore-scripts --create-release github -y
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
