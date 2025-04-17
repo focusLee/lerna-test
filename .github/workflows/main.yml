@@ -11,6 +11,8 @@ jobs:
         contents: write
     steps:
       - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.PAT_TOKEN }}
 
       - uses: actions/setup-node@v3.3.0
         with:
@@ -33,5 +35,5 @@ jobs:
           ./node_modules/.bin/lerna publish patch --yes --force-publish --no-verify-access
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          github_token: ${{ secrets.NPM_TOKEN }}
+         
 
