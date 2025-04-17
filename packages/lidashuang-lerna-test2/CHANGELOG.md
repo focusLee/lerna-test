@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.11 (2025-04-17)
+
+
+### Features
+
+* npm ([2212464](https://github.com/focusLee/lerna-test/commit/221246499b32670ab43c69c4307a698a15aa5efc))
+
+
+
+
+
 ## [0.0.10](https://github.com/focusLee/lerna-test/compare/v0.0.9...v0.0.10) (2025-04-16)
 
 **Note:** Version bump only for package lidashuang-lerna-test2
