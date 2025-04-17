@@ -4,8 +4,8 @@ module.exports = {
     description: 'A VuePress powered documentation site',
     themeConfig: {
       nav: [
-        { text: 'Home2', link: '/' },
-        { text: 'Guide', link: '/guide/' },
+        { text: 'Home4', link: '/' },
+        { text: 'Guide1', link: '/guide/' },
       ],
       sidebar: [
         '/',
