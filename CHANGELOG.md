@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.12 (2025-04-17)
+
+
+### Features
+
+* npm ([8ab0ce6](https://github.com/focusLee/lerna-test/commit/8ab0ce623ead1f868dcb63a7c36484882600cb85))
+
+
+
+
+
 ## 0.0.11 (2025-04-17)
 
 
