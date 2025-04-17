@@ -4,11 +4,11 @@ name: npm publish
 on:
   workflow_dispatch:  # 启用手动触发
 
+permissions:
+      contents: write
 jobs:
   publish:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@v3
 
