@@ -25,7 +25,7 @@ jobs:
       - name: publish to npm
         run: |
           npm whoami
-          ./node_modules/.bin/lerna publish publish patch --yes --force-publish
+          ./node_modules/.bin/lerna publish patch --yes --force-publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
