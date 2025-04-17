@@ -7,6 +7,8 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    permissions:
+        contents: write
     steps:
       - uses: actions/checkout@v3
 
@@ -22,8 +24,8 @@ jobs:
       - name: Setup credentials
         # lerna publish 后会提交代码到master分支，这里是为了配置 git 用户，区分用户
         run: |
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"  # GitHub官方认证邮箱
-          git config --global user.name "github-actions[bot]"  # 官方机器人用户名
+          git config --global user.email action@github.com
+          git config --global user.name Github Action
       
       - name: publish to npm
         run: |
@@ -31,5 +33,4 @@ jobs:
           ./node_modules/.bin/lerna publish patch --yes --force-publish --no-verify-access
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          github_token: ${{ secrets.PAT_TOKEN }}
 
