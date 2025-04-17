@@ -13,9 +13,6 @@
   "files": [
     "lib"
   ],
-  "publishConfig": {
-    "registry": "http://mirrors.tencent.com/npm/"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/focusLee/lerna-test.git"

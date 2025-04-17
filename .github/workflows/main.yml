@@ -25,8 +25,7 @@ jobs:
       - name: publish to npm
         run: |
           npm whoami
-          ./node_modules/.bin/lerna run prepack
-          ./node_modules/.bin/lerna publish from-package --no-verify-access --ignore-scripts --create-release github -y
+          ./node_modules/.bin/lerna publish publish patch --yes --force-publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
