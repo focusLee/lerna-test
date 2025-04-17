@@ -7,8 +7,6 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    permissions:
-        contents: write
     steps:
       - uses: actions/checkout@v3
 
@@ -33,4 +31,5 @@ jobs:
           ./node_modules/.bin/lerna publish patch --yes --force-publish --no-verify-access
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          github_token: ${{ secrets.PAT_TOKEN }}
 
