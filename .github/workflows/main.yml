@@ -7,11 +7,10 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    permissions:
+        contents: write
     steps:
       - uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.PAT_TOKEN }}  # 使用专用token认证
-          fetch-depth: 0  # 获取完整提交历史
 
       - uses: actions/setup-node@v3.3.0
         with:
@@ -22,10 +21,16 @@ jobs:
         run: |
           yarn install
 
+      - name: Setup credentials
+        # lerna publish 后会提交代码到master分支，这里是为了配置 git 用户，区分用户
+        run: |
+          git config --global user.email action@github.com
+          git config --global user.name Github Action
+      
       - name: publish to npm
         run: |
           npm whoami
-          ./node_modules/.bin/lerna publish patch --yes --force-publish
+          ./node_modules/.bin/lerna publish patch --yes --force-publish --no-verify-access
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
