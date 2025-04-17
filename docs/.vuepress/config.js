@@ -11,5 +11,8 @@ module.exports = {
         '/',
         '/guide/',
       ]
-    }
+    },
+    output: {
+        publicPath: '/lerna-test/',
+      },
   }
